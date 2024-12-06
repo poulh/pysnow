@@ -1,3 +1,6 @@
+# this file is not working as i need to get poetry working on my win32
+# created setup.py
+
 [tool.poetry]
 name = "pysnow"
 version = "0.7.17"
@@ -8,10 +11,12 @@ readme = "README.md"
 homepage = "https://github.com/rbw/pysnow"
 
 [tool.poetry.dependencies]
-python = ">=3.11.*, <4"
+python = ">=2.7.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 requests = "^2.32.3"
 oauthlib = "^3.2.2"
-python-magic = "^0.4.27"
+python-magic = "^0.4.27; sys_platform == 'linux'"
+python-magic-bin = "^0.4.14; sys_platform == 'darwin'"
+python-magic-bin = "^0.4.14; sys_platform == 'win32'"
 requests-oauthlib = "^2.0.0"
 six = "^1.17.0"
 ijson = "^3.3.0"

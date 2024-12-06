@@ -1,8 +1,4 @@
-
 import pysnow
-# import pandas as pd
-print('hello')
-
 
 
 if __name__ == "__main__":
@@ -28,4 +24,4 @@ if __name__ == "__main__":
         dict["sys_id"].append(location_center["sys_id"])
         dict["name"].append(location_center["name"])
 
-print(dict)
+    print(dict)

@@ -1,6 +1,6 @@
 ### Python template
 # Editor files
-
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
